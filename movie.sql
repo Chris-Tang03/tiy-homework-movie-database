@@ -430,6 +430,7 @@ Mystery	11
 Sci-Fi	12
 Musical	13
 Horror	14
+Independent Film	25
 \.
 
 
@@ -437,7 +438,7 @@ Horror	14
 -- Name: genre_genre_id_seq; Type: SEQUENCE SET; Schema: public; Owner: Cwolf
 --
 
-SELECT pg_catalog.setval('genre_genre_id_seq', 10, true);
+SELECT pg_catalog.setval('genre_genre_id_seq', 11, true);
 
 
 --
@@ -586,7 +587,6 @@ SELECT pg_catalog.setval('movie_person_person_id_seq', 13, true);
 --
 
 COPY person (firstname, lastname, person_id) FROM stdin;
-Heath	Ledger	1
 Christian	Bale	2
 Rumi	Hiiragi	3
 Miyu	Irino	4
@@ -606,6 +606,7 @@ Tom	Hanks	17
 Tim	Allen	18
 Ellen	DeGeneres	19
 Albert	Brooks	20
+Nathan	Poling	1
 \.
 
 
@@ -613,7 +614,7 @@ Albert	Brooks	20
 -- Name: person_person_id_seq; Type: SEQUENCE SET; Schema: public; Owner: Cwolf
 --
 
-SELECT pg_catalog.setval('person_person_id_seq', 21, true);
+SELECT pg_catalog.setval('person_person_id_seq', 22, true);
 
 
 --
